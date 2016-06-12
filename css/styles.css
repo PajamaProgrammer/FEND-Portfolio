@@ -1,0 +1,97 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
+    background: #f7f7f7;
+}
+
+.modal-content {
+    background-color: #f7f7f7;
+    }
+
+.text-muted {
+    color: #BCBBBB;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
+
+.cursor-hand {
+    cursor: pointer;
+}
+.cursor-hand:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+    }
+
+.article-container {
+    padding: 20px;
+}
+.article {
+    padding: 20px;
+    box-shadow: 1px 1px 2px 1px #ddd;
+    border-radius: 5px;
+    background: #fff;
+    align-items: center;
+
+}
+.img-cicular {
+    border-radius: 50%;
+}
+.img-responsive {
+    margin: 0 auto;
+}
+
+.img-project-link {
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+hr {
+    border-color: #ddd;
+}
+
+a:hover {
+   text-decoration:none;
+}
+
+p {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .title-super {
+        font-size: 50px;
+    }
+    .title-minor {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .title-super {
+        font-size: 40px;
+    }
+    .title-minor {
+        font-size: 16px;
+    }
+}
