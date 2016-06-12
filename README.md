@@ -5,4 +5,4 @@ The website I create must be responsive, and must provide an overview of each of
 It must also adhere to the program's [styleguide](http://udacity.github.io/frontend-nanodegree-styleguide/) and be validated against the [W3C's Validators](http://validator.w3.org/).  
 I am free to personalize the design as I wish.
 
-The non-live site may be viewed at [http://htmlpreview.github.io/?https://github.com/PajamaProgrammer/FEND-Portfolio/blob/master/index.html](http://htmlpreview.github.io/?https://github.com/PajamaProgrammer/FEND-Portfolio/blob/master/index.html).
+The live site may be viewed at [http://pajamaprogrammer.github.io/FEND-Portfolio/](http://pajamaprogrammer.github.io/FEND-Portfolio/).
