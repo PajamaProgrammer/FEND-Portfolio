@@ -30,6 +30,7 @@ body {
 
 .title-logo {
     margin-top: 20px;
+    padding: 0px;
 }
 
 .cursor-hand {
@@ -50,7 +51,7 @@ body {
     align-items: center;
 
 }
-.img-cicular {
+.img-circular {
     border-radius: 50%;
 }
 .img-responsive {
@@ -84,14 +85,25 @@ p {
         font-size: 50px;
     }
     .title-minor {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .title-super {
         font-size: 40px;
     }
     .title-minor {
         font-size: 16px;
+    }
+    .title-work {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .title-super {
+        font-size: 35px;
+    }
+    .title-minor {
+        font-size: 14px;
     }
 }
