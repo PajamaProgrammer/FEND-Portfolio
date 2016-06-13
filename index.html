@@ -10,8 +10,6 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/jquery-1.12.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
 
         <!--Favicon-->
         <link rel="apple-touch-icon" sizes="57x57" href="img/images/apple-touch-icon-57x57.png">
@@ -27,101 +25,111 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
 
     <body class="container">
 
         <!-- Start Header, contains Logo and Title-->
-        <div class="row title text-right text-uppercase header">
-            <div class="col-md-12 title">
-                <a style="float:left" href="http://www.pajamaprogrammer.com/" class="title-logo img-circular">
-                    <img  class="img-circular" src="img/images/pjp%20profile%20100x116.jpg" alt="Logo - Pajama Programmer">
-                </a>
-                <h1 class="title-super text-thin">Rebecca Owen</h1>
-                <h3 class="title-minor">Front-end Ninja</h3>
+        <header>
+            <div class="row title text-right text-uppercase header">
+                <div class="col-md-12 title">
+                    <a href="http://www.pajamaprogrammer.com/" class="title-logo img-circular">
+                        <img  class="img-circular" src="img/images/pjp%20profile%20100x116.jpg" alt="Logo - Pajama Programmer">
+                    </a>
+                    <h1 class="title-super text-thin">Rebecca Owen</h1>
+                    <h3 class="title-minor">Front-end Ninja</h3>
+                </div>
             </div>
-        </div>
 
-        <!-- Separator -->
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
+            <!-- Separator -->
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
             </div>
-        </div>
-
+        </header>
         <!-- All Space images are from https://spaceholder.cc/ -->
         <!-- All Space related text is from http://spaceipsum.com/ -->
         <!-- TODO: replace text, images, links with projects! -->
-        <div class="row">
-            <div class="col-md-12">
-                <picture> <!--TODO: Update Portfolio Theme Image -->
-                    <source media="(max-width: 400px)" srcset="img/images_gr/SpacePlaceHolder_Portfolio-400_small.jpg">
-                    <source media="(max-width: 800px)" srcset="img/images_gr/SpacePlaceHolder_Portfolio-800_medium_1x.jpg">
-                    <source media="(min-width: 801px)" srcset="img/images_gr/SpacePlaceHolder_Portfolio-1600_large_2x.jpg">
-                    <img src="img/images_src/SpacePlaceHolder_Portfolio.jpg" alt="Space is awesome." class="img-responsive">
-                </picture>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-muted title-work">Featured Work</h2>
-            </div>
-        </div>
-
-        <!--
-        Project cards: each project is presented as a 'card' with a simple image and gitHub link. Clicking the project image will trigger a popup (modal). The popup contains a short description of the project and links to the project.
-        TODO: Update project cards/popups with appropriate titles, descriptions, images, links...
-        -->
-
-        <div class="row text-center">
-            <div class="col-md-6 card-container">
-                <div class="col-md-12 card">
-                    <img src="img/images_gr/SpacePlaceHolder_Project1-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project1" alt="Project#1">
-                    <h3>Project #1</h3>
-                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+        <section id="portfolio-theme">
+            <div class="row">
+                <div class="col-md-12">
+                    <picture> <!--TODO: Update Portfolio Theme Image -->
+                        <source media="(max-width: 400px)" srcset="img/images_gr/SpacePlaceHolder_Portfolio-400_small.jpg">
+                        <source media="(max-width: 800px)" srcset="img/images_gr/SpacePlaceHolder_Portfolio-800_medium_1x.jpg">
+                        <source media="(min-width: 801px)" srcset="img/images_gr/SpacePlaceHolder_Portfolio-1600_large_2x.jpg">
+                        <img src="img/images_src/SpacePlaceHolder_Portfolio.jpg" alt="Space is awesome." class="img-responsive">
+                    </picture>
                 </div>
             </div>
 
-            <div class="col-md-6 card-container">
-                <div class="col-md-12 card">
-                    <img src="img/images_gr/SpacePlaceHolder_Project2-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project2" alt="Project#2">
-                    <h3>Project #2</h3>
-                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+            <!-- Separator -->
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="row text-center">
-            <div class="col-md-6 card-container">
-                <div class="col-md-12 card">
-                    <img src="img/images_gr/SpacePlaceHolder_Project3-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project3" alt="Project#3">
-                    <h3>Project #3</h3>
-                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+        <section id="portfolio">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-muted title-work">Featured Work</h2>
                 </div>
             </div>
 
-            <div class="col-md-6 card-container">
-                <div class="col-md-12 card">
-                    <img src="img/images_gr/SpacePlaceHolder_Project4-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project4" alt="Project#4">
-                    <h3>Project #4</h3>
-                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
-                </div>
+            <!--
+            Project cards: each project is presented as a 'card' with a simple image and gitHub link. Clicking the project image will trigger a popup (modal). The popup contains a short description of the project and links to the project.
+            TODO: Update project cards/popups with appropriate titles, descriptions, images, links...
+            -->
+
+            <div class="row text-center">
+                <article class="col-md-6 card-container">
+                    <div class="col-md-12 card">
+                        <img src="img/images_gr/SpacePlaceHolder_Project1-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project1" alt="Project#1">
+                        <h3>Project #1</h3>
+                        <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+                    </div>
+                </article>
+
+                <article class="col-md-6 card-container">
+                    <div class="col-md-12 card">
+                        <img src="img/images_gr/SpacePlaceHolder_Project2-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project2" alt="Project#2">
+                        <h3>Project #2</h3>
+                        <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+                    </div>
+                </article>
             </div>
-        </div>
+
+            <div class="row text-center">
+                <article class="col-md-6 card-container">
+                    <div class="col-md-12 card">
+                        <img src="img/images_gr/SpacePlaceHolder_Project3-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project3" alt="Project#3">
+                        <h3>Project #3</h3>
+                        <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+                    </div>
+                </article>
+
+                <article class="col-md-6 card-container">
+                    <div class="col-md-12 card">
+                        <img src="img/images_gr/SpacePlaceHolder_Project4-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project4" alt="Project#4">
+                        <h3>Project #4</h3>
+                        <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <!-- Footer -->
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
             </div>
-        </div>
+        </footer>
 
         <!-- Project 1 Popup (modal) -->
         <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
@@ -143,7 +151,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <a class="fontawesome-github" href="https://github.com/PajamaProgrammer" style="float: left;"></a>
+                        <a class="fontawesome-github float-left" href="https://github.com/PajamaProgrammer"></a>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -168,7 +176,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <a class="fontawesome-github" href="https://github.com/PajamaProgrammer" style="float: left;"></a>
+                        <a class="fontawesome-github float-left" href="https://github.com/PajamaProgrammer"></a>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -193,7 +201,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <a class="fontawesome-github" href="https://github.com/PajamaProgrammer" style="float: left;"></a>
+                        <a class="fontawesome-github float-left" href="https://github.com/PajamaProgrammer";"></a>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -218,7 +226,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <a class="fontawesome-github" href="https://github.com/PajamaProgrammer" style="float: left;"></a>
+                        <a class="fontawesome-github float-left" href="https://github.com/PajamaProgrammer"></a>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
