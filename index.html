@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio | Owen</title>
+
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
-        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
         <!--Favicon-->
         <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
@@ -22,14 +24,15 @@
         <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="images/manifest.json">
         <link rel="mask-icon" href="images/safari-pinned-tab.svg">
-
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
     </head>
 
     <body class="container">
-        <div class="row title text-right text-uppercase">
+
+        <!-- Start Header, contains Logo and Title-->
+        <div class="row title text-right text-uppercase header">
             <div class="col-md-12 title">
                 <a style="float:left" href="http://www.pajamaprogrammer.com/" class="title-logo img-circular">
                     <img  class="img-circular" src="images/pjp%20profile%20100x116.jpg" alt="Logo - Pajama Programmer">
@@ -38,25 +41,20 @@
                 <h3 class="title-minor">Front-end Ninja</h3>
             </div>
         </div>
-<!--
-        <div class="col-md-6">
-            <img class="title-logo" src="https://spaceholder.cc/100x100" alt="Logo - Pajama Programmer"></div>
-            <div class="col-md-6 text-right text-uppercase">
-                <h1 class="title-super text-thin">Rebecca Owen</h1>
-                <h3>Front-end Ninja</h3>
-            </div>
-        </div>
--->
+
+        <!-- Separator -->
         <div class="row">
             <div class="col-md-12">
                 <hr>
             </div>
         </div>
+
+        <!-- All Space images are from https://spaceholder.cc/ -->
+        <!-- All Space related text is from http://spaceipsum.com/ -->
+        <!-- TODO: replace text, images, links with projects! -->
         <div class="row">
             <div class="col-md-12">
-                <!-- All Space images are from https://spaceholder.cc/ -->
-                <!-- All Space related text is from http://spaceipsum.com/-->
-                <picture>
+                <picture> <!--TODO: Update Portfolio Theme Image -->
                     <source media="(max-width: 400px)" srcset="images_gr/SpacePlaceHolder_Portfolio-400_small.jpg">
                     <source media="(max-width: 800px)" srcset="images_gr/SpacePlaceHolder_Portfolio-800_medium_1x.jpg">
                     <source media="(min-width: 801px)" srcset="images_gr/SpacePlaceHolder_Portfolio-1600_large_2x.jpg">
@@ -64,56 +62,68 @@
                 </picture>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-muted title-work">Featured Work</h2>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-6 article-container">
-                <div class="col-md-12 article">
-                    <img src="images_gr/SpacePlaceHolder_Project1-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project1" alt="Project#1">
-                    <h3>Project #1</h3>
-                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
-                </div>
-            </div>
-            <div class="col-md-6 article-container">
-                <div class="col-md-12 article">
-                    <img src="images_gr/SpacePlaceHolder_Project2-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project2" alt="Project#2">
-                    <h3>Project #2</h3>
-                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-6 article-container">
-                <div class="col-md-12 article">
-                    <img src="images_gr/SpacePlaceHolder_Project3-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project3" alt="Project#3">
-                    <h3>Project #3</h3>
-                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
-                </div>
-            </div>
-            <div class="col-md-6 article-container">
-                <div class="col-md-12 article">
-                    <img src="images_gr/SpacePlaceHolder_Project4-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project4" alt="Project#4">
-                    <h3>Project #4</h3>
-                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
-                </div>
-            </div>
-        </div>
+
         <div class="row">
             <div class="col-md-12">
                 <hr>
             </div>
         </div>
 
-    <!--</body> -->
-    <!-- Modal -->
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-muted title-work">Featured Work</h2>
+            </div>
+        </div>
+
+        <!--
+        Project cards: each project is presented as a 'card' with a simple image and gitHub link. Clicking the project image will trigger a popup (modal). The popup contains a short description of the project and links to the project.
+        TODO: Update project cards/popups with appropriate titles, descriptions, images, links...
+        -->
+
+        <div class="row text-center">
+            <div class="col-md-6 card-container">
+                <div class="col-md-12 card">
+                    <img src="images_gr/SpacePlaceHolder_Project1-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project1" alt="Project#1">
+                    <h3>Project #1</h3>
+                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+                </div>
+            </div>
+
+            <div class="col-md-6 card-container">
+                <div class="col-md-12 card">
+                    <img src="images_gr/SpacePlaceHolder_Project2-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project2" alt="Project#2">
+                    <h3>Project #2</h3>
+                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-6 card-container">
+                <div class="col-md-12 card">
+                    <img src="images_gr/SpacePlaceHolder_Project3-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project3" alt="Project#3">
+                    <h3>Project #3</h3>
+                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+                </div>
+            </div>
+
+            <div class="col-md-6 card-container">
+                <div class="col-md-12 card">
+                    <img src="images_gr/SpacePlaceHolder_Project4-800_medium_1x.jpg" class="img-responsive cursor-hand img-circular" data-toggle="modal" data-target="#project4" alt="Project#4">
+                    <h3>Project #4</h3>
+                    <p><a class="fontawesome-github" href="https://github.com/PajamaProgrammer"></a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+
+        <!-- Project 1 Popup (modal) -->
         <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -122,6 +132,7 @@
                             Project #1
                         </h4>
                     </div>
+
                     <div class="modal-body">
                         <a href="http://pajamaprogrammer.github.io" class="img-project-link">
                             <img class="img-responsive img-project-link" src="images_gr/SpacePlaceHolder_Project1-800_medium_1x.jpg" alt="Project#1">
@@ -130,6 +141,7 @@
                             A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.
                         </p>
                     </div>
+
                     <div class="modal-footer">
                         <a class="fontawesome-github" href="https://github.com/PajamaProgrammer" style="float: left;"></a>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -138,12 +150,14 @@
             </div>
         </div>
 
+        <!-- Project 2 Popup (modal) -->
         <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="myModalLabel2">Project #2</h4>
                     </div>
+
                     <div class="modal-body">
                         <a href="http://pajamaprogrammer.github.io" class="img-project-link">
                             <img class="img-responsive img-project-link" src="images_gr/SpacePlaceHolder_Project2-800_medium_1x.jpg" alt="Project#2">
@@ -152,6 +166,7 @@
                             There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.
                         </p>
                     </div>
+
                     <div class="modal-footer">
                         <a class="fontawesome-github" href="https://github.com/PajamaProgrammer" style="float: left;"></a>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -160,12 +175,14 @@
             </div>
         </div>
 
+        <!-- Project 3 Popup (modal) -->
         <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="myModalLabel3">Project #3</h4>
                     </div>
+
                     <div class="modal-body">
                         <a href="http://pajamaprogrammer.github.io" class="img-project-link">
                             <img class="img-responsive img-project-link" src="images_gr/SpacePlaceHolder_Project3-800_medium_1x.jpg" alt="Project#3">
@@ -174,6 +191,7 @@
                             NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go.
                         </p>
                     </div>
+
                     <div class="modal-footer">
                         <a class="fontawesome-github" href="https://github.com/PajamaProgrammer" style="float: left;"></a>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -182,12 +200,14 @@
             </div>
         </div>
 
+        <!-- Project 4 Popup (modal) -->
         <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="myModalLabel4">Project #4</h4>
                     </div>
+
                     <div class="modal-body">
                         <a href="http://pajamaprogrammer.github.io" class="img-project-link">
                             <img class="img-responsive img-project-link" src="images_gr/SpacePlaceHolder_Project4-800_medium_1x.jpg" alt="Project#4">
@@ -196,6 +216,7 @@
                             As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.
                         </p>
                     </div>
+
                     <div class="modal-footer">
                         <a class="fontawesome-github" href="https://github.com/PajamaProgrammer" style="float: left;"></a>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

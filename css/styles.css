@@ -1,3 +1,10 @@
+/*
+* {
+    border: 1px solid red !important;
+}
+*/
+
+/* fontawesome - used for github logo */
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 /* fontawesome */
@@ -5,6 +12,7 @@
   font-family: 'FontAwesome', sans-serif;
 }
 
+/* Apply a few defualts */
 body {
     font-family: 'Lato', sans-serif;
     color: #2d3c49;
@@ -26,17 +34,21 @@ a {
     border-radius: 4px;
     padding: 5px;
     transition: 0.3s;
-    }
+}
+
+/* gives all links an interesting blue glow effect */
 a:hover {
     text-decoration:none;
     box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
 }
+
 .modal-content {
     background-color: #f7f7f7;
-    }
+    font-size: 15px;
+}
 
 .text-muted {
-    color: #BCBBBB;
+    color: #bcbbbb;
 }
 
 .text-thin {
@@ -49,37 +61,40 @@ a:hover {
 
 .title-logo {
     margin-top: 20px;
-    padding: 0px;
+    padding: 0;
 }
 
 .cursor-hand {
     cursor: pointer;
 }
+
 .cursor-hand:hover {
     box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
-    }
+}
 
-.article-container {
+.card-container {
     padding: 20px;
 }
-.article {
+
+.card {
     padding: 20px;
     box-shadow: 1px 1px 2px 1px #ddd;
     border-radius: 5px;
     background: #fff;
     align-items: center;
-
 }
+
 .img-circular {
     border-radius: 50%;
 }
+
 .img-responsive {
     margin: 0 auto;
 }
 
 .img-project-link {
     margin: 0 auto;
-    padding: 0px;
+    padding: 0;
     border-radius: 5px;
 }
 
@@ -87,6 +102,7 @@ img, embed, object, video {
     max-width: 100%;
 }
 
+/* Adjusting the font sizes with screen sizes */
 @media only screen and (max-width: 600px) {
     .title-super {
         font-size: 50px;
@@ -95,6 +111,7 @@ img, embed, object, video {
         font-size: 18px;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .title-super {
         font-size: 40px;
@@ -106,6 +123,7 @@ img, embed, object, video {
         font-size: 25px;
     }
 }
+
 @media only screen and (max-width: 400px) {
     .title-super {
         font-size: 35px;
